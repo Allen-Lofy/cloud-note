@@ -1,0 +1,25 @@
+{
+  "name": "cloud-note",
+  "version": "1.0.0",
+  "description": "A lightweight web-based note-taking application",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm run start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "notes",
+    "markdown",
+    "vue",
+    "express",
+    "cloud"
+  ],
+  "author": "",
+  "license": "MIT"
+}
